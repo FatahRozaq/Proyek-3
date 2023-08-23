@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* background-color: #1D5D9B; */
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh; 
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px black;
+}
+
+.box.mini {
+    height: 80px;
+}
+
+.box.medium {
+    height: 447px;
+}
+
+.box.miniPanjang {
+    height: 80px;
+}
+
+.mediumPanjang {
+    height: 528px;
+}
+
+
+.box1 {
+    height: 100vh;
+    width: 20%;
+}
+
+.box2 {
+    /* height: 50%; */
+    width: 80%;
+    /* background-color: aqua; */
+}
+
+.box2-bawah {
+    width: 100%;
+    height: 40px;
+    background-color: #75C2F6;
+    display: flex;
+    flex-direction: row;
+}
+
+.boxKiri {
+    width: 65%;
+    background-color: bisque;
+    height: 608px;
+    display: flex;
+    flex-direction: column;
+}
+
+.boxKiri-1 {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    flex-direction: row;
+    z-index: 22;
+}
+
+.boxKiri-1-1 {
+    width: 50%;
+    height: 100%;
+    background-color: red;
+}
+
+.boxKiri-1-2 {
+    width: 50%;
+    height: 100%;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 3px black;
+}
+
+.boxKiri-2 {
+    width: 100%;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    border: solid 2px black;
+}
+
+.boxKiri-3 {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    border: solid 2px black;
+}
+
+.boxKanan {
+    width: 35%;
+    background-color: #F4D160;
+    height: 608px;
+}
+
+.box2-pertama {
+    width: 65%;
+    height: 608px;
+    background-color: #F4D160;
+}
+
+.box2-kedua {
+    width: 35%;
+    height: 608px;
+    background-color: antiquewhite;
+}
+
+.kuning {
+    background-color: #F4D160;
+}
+
+.hijau {
+    background-color: green;
+}
+
+.merah {
+    background-color: red;
+}
+
+.biruTua {
+    background-color: #1D5D9B;
+}
+
+.biru {
+    background-color: #75C2F6;
+}
+
+.hitam {
+    background-color: black;
+}
+
+.ungu {
+    background-color: purple;
+}
+
+.coklat {
+    background-color: brown;
+}
+
+.putih {
+    background-color: white;
+}
+
+.textPutih {
+    color: white;
+}
+
+
+
