@@ -1,0 +1,26 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    /* gap: 10px; */
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.box {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    border: solid 2px black;
+}
+
+.hitam {
+    background-color: black;
+    grid-column: 2/5;
+    color: white;
+}
+
+.kuning {
+    background-color: yellow;
+    /* grid-column: 2/5; */
+    color: black;
+}

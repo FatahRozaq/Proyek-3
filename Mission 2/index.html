@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sicuker Cashier</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="title">Sicashier</div>
+        </div>
+
+        <div class="main-content">
+            <div class="item-content">
+                <div class="title">
+                    Item
+                </div>
+
+                <div class="content">
+                    <div class="card-item">
+                        <div class="card-image">
+                            <img src="img/finance.png" alt="">
+                        </div>
+                        
+                        <div class="card-content">
+                            <span class="nama-barang" id="namaBarang-1">Barang A</span>
+                            <span class="harga" id="hargaBarang-1">Rp. 30.000</span>
+
+                            <div class="card-item-quantity">
+                                <button id="minusButton" class="minus" onclick="ubahJumlah('Barang A', 'quantityProduct-1', -1)">-</button>
+                                    <input type="number" class="cart-number-item" id="quantityProduct-1" value="0">
+                                <button id="plusButton" class="plus" onclick="ubahJumlah('Barang A', 'quantityProduct-1', 1)">+</button>
+                            </div>
+
+                            <div class="add-item">
+                                <button class="cssbuttons-io-button" onclick="tambahCart('Barang A', 30000, 'quantityProduct-1', 'img/finance.png')"> Tambah Item
+                                    <div class="icon">
+                                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path></svg>
+                                    </div>
+                                  </button>
+                            </div>
+                            <!-- <span class=""></span> -->
+                        </div>
+                    </div>
+                    
+                    <div class="card-item">
+                        <div class="card-image">
+                            <img src="img/broccoli.png" alt="">
+                        </div>
+                        
+                        <div class="card-content">
+                            <span class="nama-barang" id="namaBarang-2">Barang B</span>
+                            <span class="harga" id="hargaBarang-2">Rp. 20.000</span>
+
+                            <div class="card-item-quantity">
+                                <button id="minusButton" class="minus" onclick="ubahJumlah('Barang B', 'quantityProduct-2', -1)">-</button>
+                                    <input type="number" class="cart-number-item" id="quantityProduct-2" value="0">
+                                <button id="plusButton" class="plus" onclick="ubahJumlah('Barang B', 'quantityProduct-2', 1)">+</button>
+                            </div>
+
+                            <div class="add-item">
+                                <button class="cssbuttons-io-button" onclick="tambahCart('Barang B', 20000, 'quantityProduct-2', 'img/broccoli.png')"> Tambah Item
+                                    <div class="icon">
+                                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path></svg>
+                                    </div>
+                                  </button>
+                            </div>
+                            <!-- <span class=""></span> -->
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <div class="card-image">
+                            <img src="img/bowl.png" alt="">
+                        </div>
+                        
+                        <div class="card-content">
+                            <span class="nama-barang" id="namaBarang-3">Barang C</span>
+                            <span class="harga" id="hargaBarang-3">Rp. 15.000</span>
+
+                            <div class="card-item-quantity">
+                                <button id="minusButton" class="minus" onclick="ubahJumlah('Barang C', 'quantityProduct-3', -1)">-</button>
+                                    <input type="number" class="cart-number-item" id="quantityProduct-3" value="0">
+                                <button id="plusButton" class="plus" onclick="ubahJumlah('Barang C', 'quantityProduct-3', 1)">+</button>
+                            </div>
+
+                            <div class="add-item">
+                                <button class="cssbuttons-io-button" onclick="tambahCart('Barang C', 15000, 'quantityProduct-3', 'img/bowl.png')"> Tambah Item
+                                    <div class="icon">
+                                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path></svg>
+                                    </div>
+                                  </button>
+                            </div>
+                            <!-- <span class=""></span> -->
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <div class="card-image">
+                            <img src="img/fertilizer.png" alt="">
+                        </div>
+                        
+                        <div class="card-content">
+                            <span class="nama-barang" id="namaBarang-4">Barang D</span>
+                            <span class="harga" id="hargaBarang-4">Rp. 30.000</span>
+
+                            <div class="card-item-quantity">
+                                <button id="minusButton" class="minus" onclick="ubahJumlah('Barang D', 'quantityProduct-4', -1)">-</button>
+                                    <input type="number" class="cart-number-item" id="quantityProduct-4" value="0">
+                                <button id="plusButton" class="plus" onclick="ubahJumlah('Barang D', 'quantityProduct-4', 1)">+</button>
+                            </div>
+
+                            <div class="add-item">
+                                <button class="cssbuttons-io-button" onclick="tambahCart(4)"> Tambah Item
+                                    <div class="icon">
+                                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path></svg>
+                                    </div>
+                                  </button>
+                            </div>
+                            <!-- <span class=""></span> -->
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <div class="card-image">
+                            <img src="img/friendship.png" alt="">
+                        </div>
+                        
+                        <div class="card-content">
+                            <span class="nama-barang">Barang E</span>
+                            <span class="harga">Rp. 45.000</span>
+
+                            <div class="card-item-quantity">
+                                <button id="minusButton" class="minus" onclick="ubahJumlah('Barang E', 'quantityProduct-5', -1)">-</button>
+                                    <input type="number" class="cart-number-item" id="quantityProduct-5" value="0">
+                                <button id="plusButton" class="plus" onclick="ubahJumlah('Barang E', 'quantityProduct-5', 1)">+</button>
+                            </div>
+
+                            <div class="add-item">
+                                <button class="cssbuttons-io-button" onclick="tambahCart(5)"> Tambah Item
+                                    <div class="icon">
+                                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path></svg>
+                                    </div>
+                                  </button>
+                            </div>
+                            <!-- <span class=""></span> -->
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <div class="card-image">
+                            <img src="img/healthcare.png" alt="">
+                        </div>
+                        
+                        <div class="card-content">
+                            <span class="nama-barang">Nama Barang</span>
+                            <span class="harga">Rp. 30.000</span>
+
+                            <div class="card-item-quantity">
+                                <button id="minusButton" class="minus">-</button>
+                                    <input type="number" class="cart-number-item" id="numberInput" value="0">
+                                <button id="plusButton" class="plus">+</button>
+                            </div>
+
+                            <div class="add-item">
+                                <button class="cssbuttons-io-button" onclick="tambahCart(6)"> Tambah Item
+                                    <div class="icon">
+                                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path></svg>
+                                    </div>
+                                  </button>
+                            </div>
+                            <!-- <span class=""></span> -->
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <div class="card-image">
+                            <img src="img/inventory.png" alt="">
+                        </div>
+                        
+                        <div class="card-content">
+                            <span class="nama-barang">Nama Barang</span>
+                            <span class="harga">Rp. 30.000</span>
+
+                            <div class="card-item-quantity">
+                                <button id="minusButton" class="minus">-</button>
+                                    <input type="number" class="cart-number-item" id="numberInput" value="0">
+                                <button id="plusButton" class="plus">+</button>
+                            </div>
+
+                            <div class="add-item">
+                                <button class="cssbuttons-io-button" onclick="tambahCart(7)"> Tambah Item
+                                    <div class="icon">
+                                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path></svg>
+                                    </div>
+                                </button>
+                            </div>
+                            <!-- <span class=""></span> -->
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <div class="card-image">
+                            <img src="img/id-card.png" alt="">
+                        </div>
+                        
+                        <div class="card-content">
+                            <span class="nama-barang">Nama Barang</span>
+                            <span class="harga">Rp. 30.000</span>
+
+                            <div class="card-item-quantity">
+                                <button id="minusButton" class="minus">-</button>
+                                    <input type="number" class="cart-number-item" id="numberInput" value="0">
+                                <button id="plusButton" class="plus">+</button>
+                            </div>
+
+                            <div class="add-item">
+                                <button class="cssbuttons-io-button" onclick="tambahCart(8)"> Tambah Item
+                                    <div class="icon">
+                                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path></svg>
+                                    </div>
+                                  </button>
+                            </div>
+                            <!-- <span class=""></span> -->
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <div class="card-image">
+                            <img src="img/clipboard.png" alt="">
+                        </div>
+                        
+                        <div class="card-content">
+                            <span class="nama-barang">Nama Barang</span>
+                            <span class="harga">Rp. 30.000</span>
+
+                            <div class="card-item-quantity">
+                                <button id="minusButton" class="minus">-</button>
+                                    <input type="number" class="cart-number-item" id="numberInput" value="0">
+                                <button id="plusButton" class="plus">+</button>
+                            </div>
+
+                            <div class="add-item">
+                                <button class="cssbuttons-io-button" onclick="tambahCart(9)"> Tambah Item
+                                    <div class="icon">
+                                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path></svg>
+                                    </div>
+                                  </button>
+                            </div>
+                            <!-- <span class=""></span> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart-content">
+                <div class="title">
+                    My Cart
+                </div>
+
+                <div class="card" >
+                    <div id="myCart">
+
+                    </div>
+
+                    <div class="total-desc">
+                        <span>Total Pembelian : </span>
+                        <span>Pajak : </span>
+                        <span>Total Bayar : </span>
+                    </div>
+            
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
